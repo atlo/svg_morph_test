@@ -1,6 +1,6 @@
 const svg = document.querySelector('svg')
-const budapest = document.querySelector('#budapest')
+const animateElements = Array.from(document.querySelectorAll('animate'))
 
 svg.addEventListener('click', function () {
-  budapest.beginElement()
+  animateElements.forEach(el => el.beginElement())
 })
